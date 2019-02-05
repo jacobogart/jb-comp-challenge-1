@@ -19,10 +19,10 @@ header {
 
 .account {
   height: 61px;
-  width: 400px;
+  width: 370px;
   margin: 10px 20px;
   float: right;
-  padding-bottom: 10px;
+  position: relative;
 }
 
 .account > *,
@@ -33,27 +33,24 @@ nav > * {
 
 nav {
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
+  height: 50px;
 }
 
 #bb-logo {
   position: absolute;
-  bottom: 10px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   height: 90px;
 }
 
 .head-icon {
-  width: 40px;
-  padding-bottom: -20px;
+  height: 35px;
+  margin: 5px 10px 0px 30px;
 }
 
 main {
   background-color: #E13700;
-}
-
-h1 {
-  margin: 0px;
 }
 
 .profile-box {
@@ -93,9 +90,11 @@ h1 {
 }
 
 h2 {
-  margin: auto;
+  position: relative;
+  bottom: 5px;
+  margin: 0px 40px 0px 0px;
   color: #F7E1BB;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 90%;
   letter-spacing: 3px;
 }
@@ -156,9 +155,9 @@ h6 {
 h1 {
   font-size: 48px;
   margin: 10px 0px 30px 20px;
+  font-weight: 700;
 }
 
-h3,
 h5,
 h4,
 h6,
@@ -166,10 +165,21 @@ h6,
   margin-left: 20px;
 }
 
+.play-count h2 {
+  margin: 0px;
+  margin-left: 5px;
+}
+
 h3 {
-  margin-bottom: 5px;
-  margin-top: 0px;
+  margin: 0px;
   font-size: 24px;
+  position: relative;
+  bottom: 10px;
+}
+
+.profile h3{
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 h4 {
@@ -202,6 +212,21 @@ p {
   visibility: hidden;
 }
 
+@media (max-width: 1033px) {
+  nav h2 {
+    margin-right: 0px;
+  }
+}
 
+.account h3 {
+  margin-right: -5px;
+}
 
+.account .head-icon {
+  margin: 5px 0px 0px 30px;
+}
+
+nav h2:hover {
+  color: #39B200;
+}
 
